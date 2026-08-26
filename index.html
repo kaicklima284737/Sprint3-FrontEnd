@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextCode | Câmera Acadêmica Inteligente JOVI</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsividade.css">
+</head>
+<body>
+
+<header class="topo">
+    <div class="logo">📸 NextCode <span>x JOVI</span></div>
+    <nav class="menu" id="menu">
+        <a href="#solucao">A Solução</a>
+        <a href="#publico">Público-Alvo</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#mockup">Simulador</a>
+        <a href="#faq">FAQ</a>
+        <a href="#equipe">Nossa Equipe</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <button class="menu-mobile" id="btnMobile">☰</button>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+    <div class="hero-texto">
+        <span class="tag">DESAFIO JOVI SMARTPHONE 2026</span>
+        <h1>Câmera Inteligente. <span>Sua rotina acadêmica descomplicada.</span></h1>
+        <p>Potencializando a câmera dos smartphones JOVI com inteligência contextual para captura de lousas, leitura OCR, resumo e geração de flashcards.</p>
+        <a href="#solucao" class="btn principal">Conhecer a Solução</a>
+    </div>
+
+    <div class="hero-tabs">
+        <button class="tab-btn active" data-tab="modo-aula">⚡ Modo Aula</button>
+        <button class="tab-btn" data-tab="ocr-pro">🔍 OCR & Scanner</button>
+        <button class="tab-btn" data-tab="ia-flashcards">🧠 IA & Resumos</button>
+    </div>
+
+    <div class="hero-tab-content">
+        <div class="tab-pane active" id="modo-aula">
+            <h3>Ativação Contextual Instantânea</h3>
+            <p>Detecta salas de aula e horários de estudo, ajustando foco e brilho para capturar lousas.</p>
+        </div>
+        <div class="tab-pane" id="ocr-pro">
+            <h3>Leitura de Textos</h3>
+            <p>Extrai textos de quadros, cadernos e apostilas, permitindo copiar e organizar o conteúdo.</p>
+        </div>
+        <div class="tab-pane" id="ia-flashcards">
+            <h3>Aprendizado Automatizado</h3>
+            <p>Transforma o conteúdo fotografado em perguntas, respostas e cartões de memorização.</p>
+        </div>
+    </div>
+</section>
+
+<section class="secao" id="solucao">
+    <div class="titulo-secao"><span>DESAFIO & TECNOLOGIA</span><h2>A Solução NextCode</h2></div>
+    <div class="grid-solucao">
+        <article class="card-solucao">
+            <div class="icone">👨‍🏫</div>
+            <h3>Modo Aula Automático</h3>
+            <p>Reconhecimento de ambiente por localização e horário, ajudando na captura das imagens.</p>
+        </article>
+        <article class="card-solucao">
+            <div class="icone">📄</div>
+            <h3>OCR & Scanner</h3>
+            <p>Detecção automática dos cantos para digitalização de cadernos e livros.</p>
+        </article>
+        <article class="card-solucao">
+            <div class="icone">🧠</div>
+            <h3>Resumos & Flashcards</h3>
+            <p>Transformação da imagem da aula em tópicos, exercícios e cartões de revisão.</p>
+        </article>
+    </div>
+</section>
+
+<section class="secao fundo-alt" id="publico">
+    <div class="titulo-secao"><span>PERSONA</span><h2>Público-Alvo</h2></div>
+    <div class="box-publico">
+        <p>A solução foi criada para <strong>estudantes universitários</strong> que precisam conciliar aulas, trabalho, projetos e rotina pessoal.</p>
+    </div>
+</section>
+
+<section class="secao" id="galeria">
+    <div class="titulo-secao"><span>INTERFACE E RECURSOS</span><h2>Galeria do Protótipo JOVI</h2></div>
+    <div class="grid-galeria">
+        <div class="item-galeria" data-img="./img/Uso-1-Preferencias.jpg" data-title="Cena 1: Login e Preferências">
+            <img src="./img/Uso-1-Preferencias.jpg" alt="Login e Preferências">
+            <p>Cena 1: Login e Preferências</p>
+        </div>
+        <div class="item-galeria" data-img="./img/Uso-2-ModoAula.jpg" data-title="Cena 2: Modo Aula">
+            <img src="./img/Uso-2-ModoAula.jpg" alt="Modo Aula">
+            <p>Cena 2: Ativação do Modo Aula</p>
+        </div>
+        <div class="item-galeria" data-img="./img/Uso-3-AntiReflexo.jpg" data-title="Cena 3: Antirreflexo">
+            <img src="./img/Uso-3-AntiReflexo.jpg" alt="Antirreflexo na lousa">
+            <p>Cena 3: Antirreflexo e Nitidez</p>
+        </div>
+        <div class="item-galeria" data-img="./img/Uso-4-OCR.jpg" data-title="Cena 4: OCR">
+            <img src="./img/Uso-4-OCR.jpg" alt="Scanner e OCR">
+            <p>Cena 4: Detecção e OCR</p>
+        </div>
+    </div>
+</section>
+
+<section class="secao fundo-alt" id="mockup">
+    <div class="titulo-secao"><span>EXPERIÊNCIA INTERATIVA</span><h2>Simulador da Câmera JOVI</h2></div>
+    <div class="mockup-container">
+        <div class="mockup-header">Modo Aula • Ativo ⚡</div>
+        <div class="mockup-view" id="mockupView">
+            <span class="lousa-text">Amostra: Equação de Ondas & Óptica</span>
+        </div>
+        <div class="mockup-controls">
+            <button class="btn-mockup" id="btnReflexo">Filtro Antireflexo</button>
+            <button class="btn-mockup" id="btnOCR">Extrair Texto</button>
+            <button class="btn-mockup" id="btnFlashcard">Gerar Flashcards</button>
+        </div>
+        <p class="mockup-output" id="mockupOutput">Clique em um botão para testar as ações.</p>
+    </div>
+</section>
+
+<section class="secao fundo-alt" id="faq">
+    <div class="titulo-secao"><span>DÚVIDAS</span><h2>Perguntas Frequentes</h2></div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-pergunta">O aplicativo consome muita bateria? <span>+</span></button>
+            <div class="faq-resposta"><p>A proposta utiliza sensores de baixo consumo e processamento otimizado.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-pergunta">Funciona em ambientes com pouca iluminação? <span>+</span></button>
+            <div class="faq-resposta"><p>Sim. O sistema pode realizar ajustes automáticos para melhorar a imagem.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-pergunta">É necessário internet para o OCR? <span>+</span></button>
+            <div class="faq-resposta"><p>A extração básica de textos pode funcionar offline. Recursos de IA precisam de conexão.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="secao" id="equipe">
+    <div class="titulo-secao"><span>INTEGRANTES</span><h2>Nossa Equipe</h2></div>
+    <div class="grid-equipe">
+        <article class="card-membro"><div class="avatar">🎓</div><h3>Kaick Lima Silva</h3><p>RM: 574060</p></article>
+        <article class="card-membro"><div class="avatar">🎓</div><h3>Gustavo Basso</h3><p>RM: 572623</p></article>
+        <article class="card-membro"><div class="avatar">🎓</div><h3>Guilherme Sales</h3><p>RM: 572933</p></article>
+        <article class="card-membro"><div class="avatar">🎓</div><h3>Pedro Feltrin Geraldes</h3><p>RM: 572933</p></article>
+        <article class="card-membro"><div class="avatar">🎓</div><h3>Guilherme Kozikoski</h3><p>RM: 571611</p></article>
+    </div>
+</section>
+
+<section class="secao fundo-alt" id="contato">
+    <div class="titulo-secao"><span>CONTATO</span><h2>Fale Conosco</h2></div>
+    <form class="formulario" id="formContato">
+        <div class="campo-grupo">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <span class="erro-msm" id="erroNome"></span>
+        </div>
+        <div class="campo-grupo">
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <span class="erro-msm" id="erroEmail"></span>
+        </div>
+        <div class="campo-grupo">
+            <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <span class="erro-msm" id="erroMensagem"></span>
+        </div>
+        <button type="submit" class="btn principal">Enviar Mensagem</button>
+    </form>
+</section>
+
+</main>
+
+<footer class="rodape">
+    <p>📸 <strong>NextCode</strong> - Câmera Acadêmica Inteligente | Parceria JOVI & FIAP 2026</p>
+</footer>
+
+<div class="modal" id="modalGaleria">
+    <span class="modal-fechar" id="modalFechar">&times;</span>
+    <img class="modal-conteudo" id="modalImg" alt="Imagem Expandida">
+    <div class="modal-legenda" id="modalLegenda"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
