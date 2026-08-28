@@ -1,172 +1,219 @@
 /* Código de responsividade foi dividido em 2 arquivos para facilitar leitura. Esse arquivo trata casos de itens de até 1200px, tratando tablets e desktops */
 
 /* ===== Desktop menor (até 1200px) ===== */
+
 @media (max-width: 1200px) {
-    .hero, .secao { 
+    .hero, .secao {
         max-width: 1100px;
     }
-    .hero-texto h1 { 
-        font-size: 34px; 
+
+    .hero-texto h1 {
+        font-size: 36px;
     }
-    .titulo-secao h2 { 
-        font-size: 26px; 
+
+    .titulo-secao h2 {
+        font-size: 28px;
     }
-    .grid-solucao, .grid-equipe, .grid-galeria { 
-        gap: 18px; 
+
+    .grid-solucao, .grid-galeria {
+        gap: 20px;
+    }
+
+    .grid-equipe {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
     }
 }
 
 /* ===== Tablet (até 992px) ===== */
+
 @media (max-width: 992px) {
-    .topo { 
-        padding: 15px 4%; 
+    .topo {
+        padding: 0 4%;
     }
-    .hero, .secao { 
-        padding: 50px 4%; 
+
+    .hero {
+        min-height: auto;
+        padding: 60px 4% 40px;
     }
-    .hero-texto h1 { 
-        font-size: 32px; 
+
+    .hero-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
     }
-    .titulo-secao { 
-        margin-bottom: 30px; 
+
+    .hero-texto {
+        max-width: 100%;
+        text-align: center;
     }
-    .titulo-secao h2 { 
-        font-size: 25px; 
+
+    .hero-texto h1 {
+        font-size: 32px;
     }
-    .grid-solucao, .grid-equipe,
-    .grid-galeria {
-        /* Display Grid declarado no style.css */
-        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+
+    .hero-imagem-cadastro::before {
+        width: 280px;
+        height: 360px;
     }
-    .card-solucao, .card-membro { 
-        padding: 22px; 
+
+    .secao {
+        padding: 60px 4%;
     }
-    .mockup-container { 
-        max-width: 450px; 
+
+    .titulo-secao {
+        margin-bottom: 35px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 26px;
+    }
+
+    .grid-solucao, .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .grid-equipe {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .card-solucao, .card-membro {
+        padding: 22px 16px;
+    }
+
+    .mockup-container {
+        max-width: 480px;
     }
 }
 
 /* ===== Celular/tablet pequeno (até 768px) ===== */
+
 @media (max-width: 768px) {
-    .topo { 
-        padding: 14px 5%; 
+    .topo {
+        padding: 0 5%;
     }
 
-    .menu-mobile { 
-        display: block; 
+    .menu-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-shrink: 0;
     }
 
-    .menu { 
-        position: absolute; 
-        top: 100%; 
-        left: 0; 
-        right: 0; 
-        display: none; 
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%; 
-        padding: 15px 5%; 
-        border-bottom: 1px solid var(--border); background: var(--white); 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px 5%;
+        border-bottom: 1px solid var(--border);
+        background: var(--light);
+        box-shadow: var(--shadow);
     }
 
-    .menu.aberto { 
-        display: flex; 
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 20px 5%;
+        border-bottom: 1px solid var(--border);
+        background: var(--light);
+        box-shadow: var(--shadow);
     }
 
-    .menu a { 
-        width: 100%; 
-        padding: 10px; 
-        border-bottom: 1px solid var(--border); text-align: center; 
+    .menu a {
+        width: 100%;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+        text-align: center;
     }
 
-    .menu a:last-child { 
-        border-bottom: none; 
+    .menu a:last-child {
+        border-bottom: none;
     }
 
-    .hero, .secao { 
-        max-width: 100%; 
-        padding: 45px 5%; 
+    .hero, .secao {
+        padding: 45px 5%;
     }
 
-    .hero-texto, .hero-tab-content { 
-        max-width: 600px; 
+    .hero-texto h1 {
+        font-size: 28px;
     }
 
-    .hero-texto h1 { 
-        font-size: 29px; 
+    .hero-texto p {
+        font-size: 16px;
     }
 
-    .hero-texto p { 
-        max-width: 650px; 
-        font-size: 15px; 
+    .hero-tabs {
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
-    .hero-tabs { 
-        max-width: 650px; 
-        margin-top: 25px; 
+    .tab-btn {
+        padding: 8px 16px;
+        font-size: 13px;
     }
 
-    .titulo-secao { 
-        margin-bottom: 30px; 
+    .titulo-secao h2 {
+        font-size: 22px;
     }
 
-    .titulo-secao h2 { 
-        font-size: 24px; 
+    .grid-solucao, .grid-equipe, .grid-galeria {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
     }
 
-    .grid-solucao, .grid-equipe, .grid-galeria { 
-        grid-template-columns: 1fr; 
-        max-width: 700px; 
-        margin: 0 auto; 
+    .wrapper-imagem-prototipo {
+        height: 220px;
     }
 
-    .card-solucao, .card-membro { 
-        padding: 20px; 
-    }
-    .item-galeria { 
-        max-width: 600px; 
-        margin: 0 auto; 
+    .mockup-container {
+        width: 100%;
     }
 
-    .item-galeria img { 
-        height: 240px; 
+    .mockup-view {
+        height: 200px;
     }
 
-    .mockup-container { 
-        max-width: 500px; 
+    .mockup-controls {
+        flex-wrap: wrap;
     }
 
-    .mockup-view { 
-        height: 170px; 
-    }
-    .faq-container, .formulario { 
-        max-width: 700px; 
-    }
-    .modal { 
-        padding: 15px; 
+    .modal {
+        padding: 15px;
     }
 
-    .modal-conteudo { 
-        /* 1vw = 1% da largura total da janela
-        1vh = 1% da altura total da janela */
-        max-width: 90vw; 
-        max-height: 75vh; 
+    .modal-conteudo {
+        max-width: 90vw;
+        max-height: 70vh;
     }
 
-    .modal-legenda { 
-        max-width: 90vw; 
+    .modal-legenda {
+        max-width: 90vw;
+        font-size: 14px;
     }
 
-    .modal-fechar { 
-        top: 15px; 
+    .modal-fechar {
+        top: 15px;
         right: 20px;
-        font-size: 30px; 
+        font-size: 32px;
     }
-    .toast { 
-        right: 20px; 
-        left: 20px; 
-        max-width: none; 
+
+    .toast {
+        right: 15px;
+        left: 15px;
+        bottom: 20px;
+        text-align: center;
     }
 }
