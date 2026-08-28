@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextCode | Câmera Acadêmica Inteligente JOVI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsividade.css">
+    <link rel="stylesheet" href="./CSS/responsividade-500px.css">
 </head>
 <body>
 
@@ -26,14 +30,23 @@
 
 <main>
 
-<section class="hero" id="inicio">
-    <div class="hero-texto">
-        <span class="tag">DESAFIO JOVI SMARTPHONE 2026</span>
-        <h1>Câmera Inteligente. <span>Sua rotina acadêmica descomplicada.</span></h1>
-        <p>Potencializando a câmera dos smartphones JOVI com inteligência contextual para captura de lousas, leitura OCR, resumo e geração de flashcards.</p>
-        <a href="#solucao" class="btn principal">Conhecer a Solução</a>
+<section class="hero">
+    <div class="hero-conteudo">
+        <!-- Lado Esquerdo: Escrita/Textos -->
+        <div class="hero-texto">
+            <span class="tag">DESAFIO JOVI SMARTPHONE 2026</span>
+            <h1>Câmera Inteligente. <span>Sua rotina acadêmica descomplicada.</span></h1>
+            <p>Potencializando a câmera dos smartphones JOVI com inteligência contextual para captura de lousas, leitura OCR, resumo e geração de flashcards.</p>
+            <a href="#solucao" class="btn principal">Conhecer a Solução</a>
+        </div>
+
+        <!-- Lado Direito: Imagem da Câmera / Smartphone -->
+        <div class="hero-imagem-cadastro">
+            <img src="./img/prototipo/inicial.png" alt="Tela de Login e Cadastro - Câmera Acadêmica">
+        </div>
     </div>
 
+    <!-- Abas Interativas -->
     <div class="hero-tabs">
         <button class="tab-btn active" data-tab="modo-aula">⚡ Modo Aula</button>
         <button class="tab-btn" data-tab="ocr-pro">🔍 OCR & Scanner</button>
@@ -80,28 +93,48 @@
 <section class="secao fundo-alt" id="publico">
     <div class="titulo-secao"><span>PERSONA</span><h2>Público-Alvo</h2></div>
     <div class="box-publico">
-        <p>A solução foi criada para <strong>estudantes universitários</strong> que precisam conciliar aulas, trabalho, projetos e rotina pessoal.</p>
+        <p>A solução foi criada para <strong>estudantes fulltime</strong> que precisam conciliar aulas, trabalhos, projetos e rotina pessoal.</p>
     </div>
 </section>
 
 <section class="secao" id="galeria">
     <div class="titulo-secao"><span>INTERFACE E RECURSOS</span><h2>Galeria do Protótipo JOVI</h2></div>
     <div class="grid-galeria">
-        <div class="item-galeria" data-img="./img/Uso-1-Preferencias.jpg" data-title="Cena 1: Login e Preferências">
-            <img src="./img/Uso-1-Preferencias.jpg" alt="Login e Preferências">
+        <div class="item-galeria" data-img="./img/prototipo/Cadastro.jpg" data-title="Cena 1: Login e Autenticação Acadêmica">
+            <div class="wrapper-imagem-prototipo">
+                <img src="./img/prototipo/Cadastro.jpg" alt="Login e Autenticação">
+            </div>
             <p>Cena 1: Login e Preferências</p>
         </div>
-        <div class="item-galeria" data-img="./img/Uso-2-ModoAula.jpg" data-title="Cena 2: Modo Aula">
-            <img src="./img/Uso-2-ModoAula.jpg" alt="Modo Aula">
-            <p>Cena 2: Ativação do Modo Aula</p>
+        <div class="item-galeria" data-img="./img/prototipo/Inicio-lousa.jpg" data-title="Cena 2: Detecção de Lousa e Análise IA">
+            <div class="wrapper-imagem-prototipo">
+                <img src="./img/prototipo/Inicio-lousa.jpg" alt="Detecção de Lousa">
+            </div>
+            <p>Cena 2: Modo Lousa em Análise</p>
         </div>
-        <div class="item-galeria" data-img="./img/Uso-3-AntiReflexo.jpg" data-title="Cena 3: Antirreflexo">
-            <img src="./img/Uso-3-AntiReflexo.jpg" alt="Antirreflexo na lousa">
-            <p>Cena 3: Antirreflexo e Nitidez</p>
+        <div class="item-galeria" data-img="./img/prototipo/inicio-IA.jpg" data-title="Cena 3: IA Otimizando e Redução de Reflexos">
+            <div class="wrapper-imagem-prototipo">
+                <img src="./img/prototipo/inicio-IA.jpg" alt="Otimização por IA">
+            </div>
+            <p>Cena 3: Antirreflexo e Ajuste Ativo</p>
         </div>
-        <div class="item-galeria" data-img="./img/Uso-4-OCR.jpg" data-title="Cena 4: OCR">
-            <img src="./img/Uso-4-OCR.jpg" alt="Scanner e OCR">
-            <p>Cena 4: Detecção e OCR</p>
+        <div class="item-galeria" data-img="./img/prototipo/Layout-Camera.jpg" data-title="Cena 4: Seleção de Modos de Câmera">
+            <div class="wrapper-imagem-prototipo">
+                <img src="./img/prototipo/Layout-Camera.jpg" alt="Modos da Câmera">
+            </div>
+            <p>Cena 4: Modos da Câmera JOVI</p>
+        </div>
+        <div class="item-galeria" data-img="./img/prototipo/Pasta_Aberta.jpg" data-title="Cena 5: Seleção de Diretório e Pastas">
+            <div class="wrapper-imagem-prototipo">
+                <img src="./img/prototipo/Pasta_Aberta.jpg" alt="Seleção de Pastas">
+            </div>
+            <p>Cena 5: Seleção de Pastas do Sistema</p>
+        </div>
+        <div class="item-galeria" data-img="./img/prototipo/Pasta_fechada.jpg" data-title="Cena 6: Processamento, Salvamento e Ações de IA">
+            <div class="wrapper-imagem-prototipo">
+                <img src="./img/prototipo/Pasta_fechada.jpg" alt="Processar e Salvar Foto">
+            </div>
+            <p>Cena 6: Processamento, OCR e IA</p>
         </div>
     </div>
 </section>
@@ -111,8 +144,12 @@
     <div class="mockup-container">
         <div class="mockup-header">Modo Aula • Ativo ⚡</div>
         <div class="mockup-view" id="mockupView">
-            <span class="lousa-text">Amostra: Equação de Ondas & Óptica</span>
+            <span>Amostra: Equação de Ondas & Óptica</span>
         </div>
+
+        <label class="btn-mockup btn-upload" for="inputFoto">📤 Enviar Foto</label>
+        <input type="file" id="inputFoto" accept="image/*" hidden>
+
         <div class="mockup-controls">
             <button class="btn-mockup" id="btnReflexo">Filtro Antireflexo</button>
             <button class="btn-mockup" id="btnOCR">Extrair Texto</button>
@@ -143,11 +180,29 @@
 <section class="secao" id="equipe">
     <div class="titulo-secao"><span>INTEGRANTES</span><h2>Nossa Equipe</h2></div>
     <div class="grid-equipe">
-        <article class="card-membro"><div class="avatar">🎓</div><h3>Kaick Lima Silva</h3><p>RM: 574060</p></article>
-        <article class="card-membro"><div class="avatar">🎓</div><h3>Gustavo Basso</h3><p>RM: 572623</p></article>
-        <article class="card-membro"><div class="avatar">🎓</div><h3>Guilherme Sales</h3><p>RM: 572933</p></article>
-        <article class="card-membro"><div class="avatar">🎓</div><h3>Pedro Feltrin Geraldes</h3><p>RM: 572933</p></article>
-        <article class="card-membro"><div class="avatar">🎓</div><h3>Guilherme Kozikoski</h3><p>RM: 571611</p></article>
+        <article class="card-membro" data-bio="Responsável pela arquitetura do projeto e integração entre front-end e simulador.">
+            <div class="avatar">🎓</div><h3>Kaick Lima Silva</h3><p>RM: 574060</p>
+        </article>
+        <article class="card-membro" data-bio="Atuou no desenvolvimento da interface e nos estilos responsivos da Landing Page.">
+            <div class="avatar">🎓</div><h3>Gustavo Basso</h3><p>RM: 572623</p>
+        </article>
+        <article class="card-membro" data-bio="Responsável pela lógica do simulador e pelas interações em JavaScript.">
+            <div class="avatar">🎓</div><h3>Guilherme Sales</h3><p>RM: 572933</p>
+        </article>
+        <article class="card-membro" data-bio="Trabalhou na estrutura semântica do HTML e no conteúdo das seções.">
+            <div class="avatar">🎓</div><h3>Pedro Feltrin Geraldes</h3><p>RM: 569038</p>
+        </article>
+        <article class="card-membro" data-bio="Responsável pela pesquisa de público-alvo e validação da proposta da solução.">
+            <div class="avatar">🎓</div><h3>Guilherme Kozikoski</h3><p>RM: 571611</p>
+        </article>
+    </div>
+
+    <div class="modal" id="modalMembro">
+        <span class="modal-fechar" id="modalMembroFechar">&times;</span>
+        <div class="modal-membro-conteudo">
+            <h3 id="modalMembroNome"></h3>
+            <p id="modalMembroBio"></p>
+        </div>
     </div>
 </section>
 
@@ -176,10 +231,13 @@
     <p>📸 <strong>NextCode</strong> - Câmera Acadêmica Inteligente | Parceria JOVI & FIAP 2026</p>
 </footer>
 
+<!-- Modal da Galeria (Ampliação da Imagem) -->
 <div class="modal" id="modalGaleria">
     <span class="modal-fechar" id="modalFechar">&times;</span>
-    <img class="modal-conteudo" id="modalImg" alt="Imagem Expandida">
-    <div class="modal-legenda" id="modalLegenda"></div>
+    <div class="modal-box-imagem">
+        <img class="modal-conteudo" id="modalImg" alt="Imagem Expandida do Protótipo">
+        <div class="modal-legenda" id="modalLegenda"></div>
+    </div>
 </div>
 
 <div class="toast" id="toast"></div>

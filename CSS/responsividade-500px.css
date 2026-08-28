@@ -1,0 +1,371 @@
+/* Código de responsividade foi dividido em 2 arquivos para facilitar leitura. Esse arquivo trata casos de itens de até 576px, tratando celulares de todos os tamanhos. */
+
+/* ===== Celular (até 576px) ===== */
+
+@media (max-width: 576px) {
+    .topo {
+        padding: 0 5%;
+    }
+
+    .logo {
+        max-width: calc(100% - 45px);
+        overflow: hidden;
+        font-size: 18px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .logo span {
+        font-size: 14px;
+    }
+
+    .menu-mobile {
+        font-size: 22px;
+    }
+
+    .menu {
+        padding: 15px 5%;
+    }
+
+    .hero, .secao {
+        padding: 35px 5%;
+    }
+
+    .hero-conteudo {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-texto h1 {
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    .hero-texto p {
+        font-size: 15px;
+    }
+
+    /* Redimensionamento seguro para os pseudoelementos da Hero */
+    .hero-imagem-cadastro {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .hero-imagem-cadastro::before {
+        width: 240px;
+        height: 320px;
+    }
+
+    .hero-imagem-cadastro img {
+        max-width: 220px;
+    }
+
+    .hero-tabs {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .tab-btn {
+        width: 100%;
+        padding: 11px;
+        text-align: center;
+    }
+
+    .hero-tab-content {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .titulo-secao {
+        margin-bottom: 25px;
+    }
+
+    .titulo-secao span {
+        font-size: 11px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 22px;
+    }
+
+    /* Forçar Grids para coluna única */
+    .grid-solucao, .grid-equipe, .grid-galeria {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card-solucao, .card-membro {
+        padding: 18px;
+    }
+
+    .card-solucao .icone, .card-membro .avatar {
+        font-size: 32px;
+    }
+
+    .item-galeria {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .wrapper-imagem-prototipo {
+        height: 180px;
+    }
+
+    .item-galeria img {
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .item-galeria p {
+        font-size: 13px;
+    }
+
+    .mockup-container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 16px;
+    }
+
+    .mockup-view {
+        height: 160px;
+    }
+
+    .mockup-controls {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-mockup {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mockup-output {
+        font-size: 12px;
+    }
+
+    .faq-pergunta {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .faq-resposta {
+        font-size: 14px;
+    }
+
+    .formulario {
+        width: 100%;
+        gap: 14px;
+    }
+
+    .formulario input, .formulario textarea {
+        font-size: 14px;
+    }
+
+    .btn.principal {
+        width: 100%;
+        padding: 13px;
+        text-align: center;
+    }
+
+    .modal {
+        padding: 12px;
+    }
+
+    .modal-membro-conteudo {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .modal-conteudo {
+        max-width: 92vw;
+        max-height: 65vh;
+    }
+
+    .modal-legenda {
+        max-width: 92vw;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .modal-fechar {
+        top: 12px;
+        right: 16px;
+        font-size: 30px;
+    }
+
+    .toast {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        padding: 12px 16px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .rodape {
+        padding: 20px 5%;
+        font-size: 12px;
+    }
+}
+
+/* ===== Celular pequeno (até 400px) ===== */
+
+@media (max-width: 400px) {
+    .topo {
+        padding: 0 4%;
+    }
+
+    .logo {
+        max-width: calc(100% - 35px);
+        font-size: 16px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+
+    .menu-mobile {
+        font-size: 20px;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .hero, .secao {
+        padding: 25px 4%;
+    }
+
+    .hero-texto h1 {
+        font-size: 22px;
+    }
+
+    .hero-texto p {
+        font-size: 13px;
+    }
+
+    .hero-imagem-cadastro::before {
+        width: 200px;
+        height: 260px;
+    }
+
+    .hero-imagem-cadastro img {
+        max-width: 180px;
+    }
+
+    .tab-btn {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .hero-tab-content {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .titulo-secao {
+        margin-bottom: 20px;
+    }
+
+    .titulo-secao span {
+        font-size: 10px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 19px;
+    }
+
+    .card-solucao, .card-membro {
+        padding: 14px;
+    }
+
+    .card-solucao .icone, .card-membro .avatar {
+        font-size: 26px;
+    }
+
+    .wrapper-imagem-prototipo {
+        height: 150px;
+    }
+
+    .item-galeria p {
+        font-size: 12px;
+    }
+
+    .mockup-container {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .mockup-view {
+        height: 130px;
+    }
+
+    .mockup-header {
+        font-size: 11px;
+    }
+
+    .btn-mockup {
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    .mockup-output {
+        font-size: 11px;
+    }
+
+    .faq-pergunta {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .faq-resposta {
+        font-size: 12px;
+    }
+
+    .formulario input, .formulario textarea {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .erro-msm {
+        font-size: 11px;
+    }
+
+    .btn.principal {
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    .modal-conteudo {
+        max-width: 90vw;
+        max-height: 60vh;
+    }
+
+    .modal-legenda {
+        max-width: 90vw;
+        font-size: 12px;
+    }
+
+    .modal-fechar {
+        top: 8px;
+        right: 12px;
+        font-size: 24px;
+    }
+
+    .toast {
+        right: 8px;
+        bottom: 8px;
+        left: 8px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .rodape {
+        padding: 15px 4%;
+        font-size: 11px;
+    }
+}
