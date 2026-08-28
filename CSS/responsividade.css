@@ -1,132 +1,172 @@
+/* Código de responsividade foi dividido em 2 arquivos para facilitar leitura. Esse arquivo trata casos de itens de até 1200px, tratando tablets e desktops */
+
 /* ===== Desktop menor (até 1200px) ===== */
 @media (max-width: 1200px) {
-    .hero, .secao { max-width: 1100px;}
-    .hero-texto h1 { font-size: 34px; }
-    .titulo-secao h2 { font-size: 26px; }
-    .grid-solucao, .grid-equipe, .grid-galeria { gap: 18px; }
+    .hero, .secao { 
+        max-width: 1100px;
+    }
+    .hero-texto h1 { 
+        font-size: 34px; 
+    }
+    .titulo-secao h2 { 
+        font-size: 26px; 
+    }
+    .grid-solucao, .grid-equipe, .grid-galeria { 
+        gap: 18px; 
+    }
 }
 
 /* ===== Tablet (até 992px) ===== */
 @media (max-width: 992px) {
-    .topo { padding: 15px 4%; }
-    .hero, .secao { padding: 50px 4%; }
-    .hero-texto h1 { font-size: 32px; }
-    .titulo-secao { margin-bottom: 30px; }
-    .titulo-secao h2 { font-size: 25px; }
+    .topo { 
+        padding: 15px 4%; 
+    }
+    .hero, .secao { 
+        padding: 50px 4%; 
+    }
+    .hero-texto h1 { 
+        font-size: 32px; 
+    }
+    .titulo-secao { 
+        margin-bottom: 30px; 
+    }
+    .titulo-secao h2 { 
+        font-size: 25px; 
+    }
     .grid-solucao, .grid-equipe,
-    .grid-galeria { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .card-solucao, .card-membro { padding: 22px; }
-    .mockup-container { max-width: 450px; }
+    .grid-galeria {
+        /* Display Grid declarado no style.css */
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    }
+    .card-solucao, .card-membro { 
+        padding: 22px; 
+    }
+    .mockup-container { 
+        max-width: 450px; 
+    }
 }
 
 /* ===== Celular/tablet pequeno (até 768px) ===== */
 @media (max-width: 768px) {
-    .topo { padding: 14px 5%; }
-    .menu-mobile { display: block; 
-    flex-shrink: 0; 
+    .topo { 
+        padding: 14px 5%; 
     }
+
+    .menu-mobile { 
+        display: block; 
+        flex-shrink: 0;
+    }
+
     .menu { 
         position: absolute; 
-        top: 100%; left: 0; right: 0; display: none; flex-direction: column; align-items: center; width: 100%; padding: 15px 5%; border-bottom: 1px solid var(--border); background: var(--white); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); }
-    .menu.aberto { display: flex; }
-    .menu a { width: 100%; padding: 10px; border-bottom: 1px solid var(--border); text-align: center; }
-    .menu a:last-child { border-bottom: none; }
-    .hero, .secao { max-width: 100%; padding: 45px 5%; }
-    .hero-texto, .hero-tab-content { max-width: 600px; }
-    .hero-texto h1 { font-size: 29px; }
-    .hero-texto p { max-width: 650px; font-size: 15px; }
-    .hero-tabs { max-width: 650px; margin-top: 25px; }
-    .titulo-secao { margin-bottom: 30px; }
-    .titulo-secao h2 { font-size: 24px; }
-    .grid-solucao, .grid-equipe, .grid-galeria { grid-template-columns: 1fr; max-width: 700px; margin: 0 auto; }
-    .card-solucao, .card-membro { padding: 20px; }
-    .item-galeria { max-width: 600px; margin: 0 auto; }
-    .item-galeria img { height: 240px; }
-    .mockup-container { max-width: 500px; }
-    .mockup-view { height: 170px; }
-    .faq-container, .formulario { max-width: 700px; }
-    .modal { padding: 15px; }
-    .modal-conteudo { max-width: 90vw; max-height: 75vh; }
-    .modal-legenda { max-width: 90vw; }
-    .modal-fechar { top: 15px; right: 20px; font-size: 30px; }
-    .toast { right: 20px; left: 20px; max-width: none; }
-}
+        top: 100%; 
+        left: 0; 
+        right: 0; 
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        padding: 15px 5%; 
+        border-bottom: 1px solid var(--border); background: var(--white); 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    }
 
-/* ===== Celular (até 576px) ===== */
-@media (max-width: 576px) {
-    .topo { padding: 12px 5%; }
-    .logo { max-width: calc(100% - 45px); overflow: hidden; font-size: 18px; text-overflow: ellipsis; }
-    .logo span { font-size: 12px; }
-    .menu-mobile { font-size: 22px; }
-    .menu { padding: 12px 5%; }
-    .hero, .secao { padding: 35px 5%; }
-    .hero-texto h1 { font-size: 25px; line-height: 1.3; }
-    .hero-texto p { font-size: 14px; }
-    .hero-tabs { flex-direction: column; gap: 8px; margin-top: 20px; }
-    .tab-btn { width: 100%; padding: 11px; }
-    .hero-tab-content { padding: 15px; font-size: 14px; }
-    .titulo-secao { margin-bottom: 25px; }
-    .titulo-secao span { font-size: 11px; }
-    .titulo-secao h2 { font-size: 22px; }
-    .card-solucao, .card-membro { padding: 18px; }
-    .icone, .avatar { font-size: 28px; }
-    .item-galeria { width: 100%; padding: 8px; }
-    .item-galeria img { height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
-    .item-galeria p { font-size: 13px; }
-    .mockup-container { padding: 15px; border-radius: 15px; }
-    .mockup-view { height: 150px; }
-    .mockup-controls { flex-direction: column; }
-    .btn-mockup { width: 100%; padding: 9px; }
-    .mockup-output { font-size: 12px; }
-    .faq-pergunta { padding: 13px; font-size: 14px; }
-    .faq-resposta { font-size: 14px; }
-    .formulario { gap: 12px; }
-    .formulario input, .formulario textarea { font-size: 14px; }
-    .btn.principal { width: 100%; padding: 13px; }
-    .modal { padding: 12px; }
-    .modal-conteudo { width: auto; max-width: 94vw; max-height: 68vh; }
-    .modal-legenda { max-width: 94vw; margin-top: 10px; font-size: 13px; }
-    .modal-fechar { top: 8px; right: 12px; font-size: 28px; }
-    .toast { right: 10px; bottom: 10px; left: 10px; padding: 10px 15px; font-size: 13px; }
-    .rodape { padding: 18px 5%; font-size: 13px; }
-}
+    .menu.aberto { 
+        display: flex; 
+    }
 
-/* ===== Celular pequeno (até 400px) ===== */
-@media (max-width: 400px) {
-    .topo, .menu { padding: 10px 4%; }
-    .logo { max-width: calc(100% - 40px); font-size: 16px; }
-    .logo span { font-size: 10px; }
-    .menu-mobile { font-size: 20px; }
-    .menu a { padding: 9px; font-size: 14px; }
-    .hero, .secao { padding: 30px 4%; }
-    .hero-texto h1 { font-size: 22px; }
-    .hero-texto p { font-size: 13px; }
-    .tab-btn { padding: 10px; font-size: 13px; }
-    .hero-tab-content { padding: 12px; font-size: 13px; }
-    .titulo-secao { margin-bottom: 20px; }
-    .titulo-secao span { font-size: 10px; }
-    .titulo-secao h2 { font-size: 20px; }
-    .card-solucao, .card-membro { padding: 15px; }
-    .icone, .avatar { font-size: 26px; }
-    .item-galeria { padding: 6px; }
-    .item-galeria img { aspect-ratio: 16 / 10; }
-    .item-galeria p { font-size: 12px; }
-    .mockup-container { padding: 12px; border-radius: 12px; }
-    .mockup-view { height: 130px; }
-    .mockup-header { font-size: 11px; }
-    .lousa-text { font-size: 12px; }
-    .btn-mockup { padding: 9px; font-size: 11px; }
-    .mockup-output { font-size: 12px; }
-    .faq-pergunta { padding: 12px; font-size: 13px; }
-    .faq-resposta { font-size: 13px; }
-    .formulario { gap: 10px; }
-    .formulario input, .formulario textarea { padding: 10px; font-size: 13px; }
-    .erro-msm { font-size: 11px; }
-    .btn.principal { padding: 12px; font-size: 13px; }
-    .modal { padding: 10px; }
-    .modal-conteudo { max-width: 94vw; max-height: 65vh; }
-    .modal-legenda { max-width: 94vw; font-size: 12px; }
-    .modal-fechar { top: 7px; right: 10px; font-size: 26px; }
-    .toast { right: 8px; bottom: 8px; left: 8px; max-width: calc(100% - 16px); padding: 10px; font-size: 12px; }
-    .rodape { padding: 15px 4%; font-size: 11px; }
+    .menu a { 
+        width: 100%; 
+        padding: 10px; 
+        border-bottom: 1px solid var(--border); text-align: center; 
+    }
+
+    .menu a:last-child { 
+        border-bottom: none; 
+    }
+
+    .hero, .secao { 
+        max-width: 100%; 
+        padding: 45px 5%; 
+    }
+
+    .hero-texto, .hero-tab-content { 
+        max-width: 600px; 
+    }
+
+    .hero-texto h1 { 
+        font-size: 29px; 
+    }
+
+    .hero-texto p { 
+        max-width: 650px; 
+        font-size: 15px; 
+    }
+
+    .hero-tabs { 
+        max-width: 650px; 
+        margin-top: 25px; 
+    }
+
+    .titulo-secao { 
+        margin-bottom: 30px; 
+    }
+
+    .titulo-secao h2 { 
+        font-size: 24px; 
+    }
+
+    .grid-solucao, .grid-equipe, .grid-galeria { 
+        grid-template-columns: 1fr; 
+        max-width: 700px; 
+        margin: 0 auto; 
+    }
+
+    .card-solucao, .card-membro { 
+        padding: 20px; 
+    }
+    .item-galeria { 
+        max-width: 600px; 
+        margin: 0 auto; 
+    }
+
+    .item-galeria img { 
+        height: 240px; 
+    }
+
+    .mockup-container { 
+        max-width: 500px; 
+    }
+
+    .mockup-view { 
+        height: 170px; 
+    }
+    .faq-container, .formulario { 
+        max-width: 700px; 
+    }
+    .modal { 
+        padding: 15px; 
+    }
+
+    .modal-conteudo { 
+        /* 1vw = 1% da largura total da janela
+        1vh = 1% da altura total da janela */
+        max-width: 90vw; 
+        max-height: 75vh; 
+    }
+
+    .modal-legenda { 
+        max-width: 90vw; 
+    }
+
+    .modal-fechar { 
+        top: 15px; 
+        right: 20px;
+        font-size: 30px; 
+    }
+    .toast { 
+        right: 20px; 
+        left: 20px; 
+        max-width: none; 
+    }
 }
